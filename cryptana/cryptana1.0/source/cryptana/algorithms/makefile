@@ -1,6 +1,6 @@
 LD_FLAGS=
 CC_FLAGS=
-CPP_FILES:=algorithm.cpp bitshift.cpp 
+CPP_FILES:=algorithm.cpp bitshift.cpp base64.cpp
 OBJ_DIR=./obj
 
 OBJ_FILES=$(patsubst %.cpp, $(OBJ_DIR)/%.o, $(CPP_FILES))
