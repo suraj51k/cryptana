@@ -23,12 +23,18 @@
 //	H E A D E R S.
 ////////////////////////////////////////////////////////////
 
-#include "algorithms.h"
-
 
 ////////////////////////////////////////////////////////////
 //	S T R U C T U R E S.
 ////////////////////////////////////////////////////////////
+
+
+typedef struct _structBASE64
+{
+	bool		bIsBase64;
+
+}	BASE64, P_BASE_64;
+
 
 ////////////////////////////////////////////////////////////
 //	C L A S S  D E C L A R A T I O N S
@@ -44,7 +50,7 @@
 //		encoded.
 //
 //**********************************************************
-class CBase64:AbsAlgorithm
+class CBase64
 {
 public:
 
@@ -58,20 +64,8 @@ public:
 	ApplyAlgorithm(
 		const unsigned char *pcuchBuffer,
 		unsigned int uicchBuffer,
-		void *vpParam
+		BASE64 *Base64
 		);
-
-	int
-	Write(
-		const char *pcszFileName
-		);
-
-	int
-	Write(
-		unsigned char *puchBuff,
-		unsigned int *puicbBuff
-		);
-
 
 };
 
